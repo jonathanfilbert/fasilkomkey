@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Template Angkatan 2018</title>
+		<!--Import Google Icon Font-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<!--Import materialize.css-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+		<!--Let browser know website is optimized for mobile-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<style type="text/css">
+		.centered{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		}
+	</style>
+	<body style="background-color: #2c3e50" >
+		<!-- Isi website -->
+		<div class="container">
+			<a>
+				<div class="row" style="text-align: center; color: white;">
+					<h1>Welcome Fasilkom UI 2018</h1>
+				</div>
+				<a class="btn waves-effect waves-teal btn-large centered" data-clipboard-text="RElieW8=">Click me</a>
+			</a>
+			
+		</div>
+		<!--JavaScript at end of body for optimized loading-->
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+		<script type="text/javascript">
+			new ClipboardJS('.btn');
+			var clipboard = new ClipboardJS('.btn');
+		clipboard.on('success', function(e) {
+		console.info('Action:', e.action);
+		console.info('Text:', e.text);
+		console.info('Trigger:', e.trigger);
+		e.clearSelection();
+		});
+		clipboard.on('error', function(e) {
+		console.error('Action:', e.action);
+		console.error('Trigger:', e.trigger);
+		});
+		</script>
+	</body>
+</html>
